@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>title</title>
+    <link rel="stylesheet" href="../dist/output.css">
+</head>
+
+<body class="text-purple-400">
+    <header class="font-bold bg-slate-900 flex justify-between items-center flex-col lg:flex-row">
+        <div class="flex items-center justify-between w-full lg:w-auto">
+            <div class="flex items-center">
+                <img class="w-16  lg:w-20" src="./images/unicor.png">
+                <span class=" ml-3">UNIVERSIDAD DE CORDOBA</span>
+            </div>
+            <img id="imgMenu" class="lg:hidden cursor-pointer mr-2" src="./images/menu.png">
+        </div>
+        <div id="menu" class="bg-slate-900 hidden lg:block w-full lg:w-1/3 ">
+            <ul class=" flex justify-around flex-col lg:flex-row text-center w-full">
+                <li>HOME</li>
+                <li>ABOUT</li>
+                <li>SERVICES</li>
+                <li>PRICING</li>
+            </ul>
+        </div>
+    </header>
+    <main class="bg-gray-800">
+        <div class="text-center">
+            <h2 class="text-3xl lg:text-5xl text-center font-bold text-white ">Mis proyectos</h2>
+            <span>Administracion general de mis poroyectos</span>
+        </div>
+        <div class="flex flex-col justify-around gap-2 lg:flex-row w-full mt-5">
+            <div class="w-full lg:w-4/12">
+                <div class="bg-purple-800">
+                    <h3 class="text-lg lg:text-3xl text-center font-bold text-purple-300 ">Nuevo Proyecto</h3>
+                </div>
+                <div class="bg-slate-900 p-5">
+                    <form class="flex flex-col">
+                        <label>
+                            Código del proyecto
+                            <input
+                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                id="username" type="text">
+                        </label>
+
+                        <label>
+                            Nombre
+                            <input
+                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                id="username" type="text">
+                        </label>
+                        <label>
+                            Tipo de proyecto
+                            <select
+                                class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ">
+                                <option>Investigación</option>
+                                <option>Extención</option>
+                            </select>
+                        </label>
+                        <label>
+                            Fecha inicio
+                            <input
+                                class="shadow appearance-none border rounded w-full py-2 px-3  text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                id="username" type="text">
+                        </label>
+                        <label>
+                            Fecha finalización
+                            <input
+                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                id="username" type="text">
+                        </label>
+                        <label>
+                            Responsable
+                            <input
+                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                id="username" type="text">
+                        </label>
+                        <label>
+                            Presupuesto
+                            <input
+                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                id="username" type="text">
+                        </label>
+                        <label>
+                            Tipo persona
+                            <div class="block">
+                                <input name="persona" type="radio">Estudiante
+                                <input name="persona" type="radio">Profesor
+                            </div>
+                        </label>
+                        <label>
+                            Tipo profesor
+                            <select
+                                class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ">
+                                <option>Planta</option>
+                                <option>Transitorio</option>
+                            </select>
+                        </label>
+                        <label>
+                            Semestre estudiante
+                            <select
+                                class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ">
+                                <option>I</option>
+                                <option>II</option>
+                                <option>III</option>
+                                <option>IV</option>
+                                <option>V</option>
+                                <option>VI</option>
+                                <option>VII</option>
+                                <option>VIII</option>
+                                <option>IX</option>
+                                <option>X</option>
+                            </select>
+                            <button id="botonAgregar"
+                                class="w-full mt-4 bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded">Registrar
+                                Proyecto</button>
+                        </label>
+                    </form>
+                </div>
+            </div>
+            <div class="flex flex-row justify-center w-12/12">
+                <div class="w-full">
+                    <div class="relative overflow-x-auto shadow-md ">
+                        <table class="w-full text-sm text-left text-purple-300">
+                            <thead class="text-xs text-purple-300 uppercase bg-purple-800 ">
+                                <tr>
+                                    <th scope="col" class="px-6 py-3">
+                                        Nombre
+                                    </th>
+                                    <th scope="col" class="px-6 py-3">
+                                        Responsable
+                                    </th>
+                                    <th scope="col" class="px-6 py-3">
+                                        Fecha inicio
+                                    </th>
+                                    <th scope="col" class="px-6 py-3">
+                                        Fecha fin
+                                    </th>
+                                    <th scope="col" class="px-6 py-3">
+                                        Dias de ejecución
+                                    </th>
+                                    <th scope="col" class="px-6 py-3">
+                                        Acciones
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="bg-slate-900 border-b ">
+                                    <th scope="row" class="px-6 py-4 font-medium text-gray-900  whitespace-nowrap">
+                                        Apple MacBook Pro 17"
+                                    </th>
+                                    <td class="px-6 py-4">
+                                        Sliver
+                                    </td>
+                                    <td class="px-6 py-4">
+                                        Laptop
+                                    </td>
+                                    <td class="px-6 py-4">
+                                        $1999
+                                    </td>
+                                    <td class="px-6 py-4">
+                                        $2999
+                                    </td>
+                                    <td class="px-6 py-4 text-right">
+                                        <a href="#" class="font-medium text-blue-600  hover:underline">Editar</a>
+                                        <a href="#" class="font-medium text-blue-600  hover:underline">Eliminar</a>
+                                        <a href="#" class="font-medium text-blue-600  hover:underline">V. Rapida</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- VENTANA DE DIALOGO QUE OPACA EL FONDO-->
+            <div></div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="./scripts/vista.js"></script>
+</body>
+
+</html>
